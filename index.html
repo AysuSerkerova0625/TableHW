@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .table {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid rgb(206, 195, 195);
+        border-collapse: collapse;
+        text-align: center;
+      }
+      th {
+        background-color: rgb(222, 215, 215);
+      }
+      i {
+        padding-right: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <table style="width: 100%">
+        <thead>
+          <tr>
+            <th rowspan="2">Category</th>
+            <th rowspan="2">Subcategory</th>
+            <th colspan="3">Product Details</th>
+            <th rowspan="2">Stock Status</th>
+          </tr>
+          <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="4">Electronics</td>
+            <td>Smartphones</td>
+            <td>Iphone 15</td>
+            <td>$999</td>
+            <td>4.5/5</td>
+            <td>
+              <i style="color: green" class="fa-solid fa-circle-check"></i>In
+              Stock
+            </td>
+          </tr>
+          <tr>
+            <td>Smartphones</td>
+            <td>Samsung Galaxy S23</td>
+            <td>$999</td>
+            <td>4.5/5</td>
+            <td>
+              <i style="color: red" class="fa-solid fa-rectangle-xmark"></i>Out
+              of Stock
+            </td>
+          </tr>
+          <tr>
+            <td>Laptops</td>
+            <td>Macbook Air 12</td>
+            <td>$999</td>
+            <td>4/5</td>
+            <td>
+              <i style="color: red" class="fa-solid fa-rectangle-xmark"></i>Out
+              of Stock
+            </td>
+          </tr>
+          <tr>
+            <td>Laptops</td>
+            <td>Macbook Air Pro 15</td>
+            <td>$999</td>
+            <td>3.5/5</td>
+            <td>
+              <i style="color: green" class="fa-solid fa-circle-check"></i>In
+              Stock
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="3">Home Appliances</td>
+            <td>Kitchen</td>
+            <td>Air Fryer</td>
+            <td>$989</td>
+            <td>3.6/5</td>
+            <td>
+              <i style="color: green" class="fa-solid fa-circle-check"></i>In
+              Stock
+            </td>
+          </tr>
+
+          <tr>
+            <td>Kitchen</td>
+            <td>Blender</td>
+            <td>$569</td>
+            <td>3/5</td>
+            <td>
+              <i style="color: red" class="fa-solid fa-rectangle-xmark"></i>Out
+              of Stock
+            </td>
+          </tr>
+          <tr>
+            <td>Living Room</td>
+            <td>Vacuum Cleaner</td>
+            <td>$489</td>
+            <td>2.5/5</td>
+            <td>
+              <i style="color: green" class="fa-solid fa-circle-check"></i>In
+              Stock
+            </td>
+          </tr>
+          <tr>
+            <td rowspan="2">Furniture</td>
+            <td>Bedroom</td>
+            <td>King Size Bed</td>
+            <td rowspan="2">$1200</td>
+            <td>3.2/5</td>
+            <td>
+              <i style="color: green" class="fa-solid fa-circle-check"></i>In
+              Stock
+            </td>
+          </tr>
+          <tr>
+            <td>Office</td>
+            <td>Ergonomic Chair</td>
+            <td>4.7/5</td>
+            <td>
+              <i style="color: green" class="fa-solid fa-circle-check"></i>In
+              Stock
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
